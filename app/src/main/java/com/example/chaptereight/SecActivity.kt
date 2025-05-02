@@ -34,8 +34,8 @@ class SecActivity : AppCompatActivity() {
                 edPhone.text.isEmpty() -> showToast("請輸入日期")
                 else -> {
                     val b = Bundle()
-                    b.putString("name", edName.text.toString() )
-                    b.putString("phone",edPhone.text.toString() )
+                    b.putString("note", edName.text.toString() )
+                    b.putString("date",edPhone.text.toString() )
                     // 使用setResult() 回傳聯絡人資料
                     setResult(Activity.RESULT_OK, Intent().putExtras(b) )
                     finish()

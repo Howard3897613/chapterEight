@@ -18,8 +18,8 @@ class MyAdapter(
         private val imgDelete: ImageView = v.findViewById(R.id.imgDelete)
         // 連結資料與View
         fun bind(item: Contact, clickListener: (Contact) -> Unit) {
-            tvName.text = item.name
-            tvPhone.text = item.phone
+            tvName.text = item.note
+            tvPhone.text = item.date
             // 設定監聽器
             imgDelete.setOnClickListener {
                 // 呼叫clickListener 回傳刪除的資料

@@ -24,10 +24,10 @@ class MainActivity : AppCompatActivity() {
         if(result.resultCode == RESULT_OK){
             //取得回傳的Intent，並從Intent中取得聯絡人資訊
             val intent = result.data
-            val name = intent?.getStringExtra("name") ?:""
-            val phone = intent?.getStringExtra("phone") ?:""
+            val note = intent?.getStringExtra("note") ?:""
+            val date = intent?.getStringExtra("date") ?:""
             //新增聯絡人資料
-            contacts.add(Contact(name,phone))
+            contacts.add(Contact(note,date))
             //更新清單
             myAdapter.notifyDataSetChanged()
         }
