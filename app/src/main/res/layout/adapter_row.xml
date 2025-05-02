@@ -29,7 +29,7 @@
             android:layout_height="92dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@android:drawable/ic_menu_edit" />
+            app:srcCompat="@android:drawable/ic_menu_today" />
 
         <ImageView
             android:id="@+id/imgDelete"
@@ -40,5 +40,5 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/tvName"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@android:drawable/ic_menu_delete" />
+            app:srcCompat="@android:drawable/presence_busy" />
 </androidx.constraintlayout.widget.ConstraintLayout>
